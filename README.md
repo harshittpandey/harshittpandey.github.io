@@ -1,3 +1,3 @@
 # particleCC
-claudiocalautti.cc for particle 
-<http://yelingfeng.github.io/particleCC>
+Implementing and redesigning the particle design of claudiocalautti.cc 
+http://yelingfeng.github.io/particleCC>
