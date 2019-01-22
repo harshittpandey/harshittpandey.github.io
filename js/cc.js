@@ -203,7 +203,8 @@ define(function(require){
 
         // 创建主多边形框对象
         function createMainParticle(t) {
-            var e = getRedius();
+            var e = getRedius(2.7);
+            console.log("real radius: "+e);
             t ? mainParticle.radius = e : mainParticle = new Polygon(e,sideNum);
             mainParticle.x = helfWidth;
             mainParticle.y = helfHeight;
@@ -211,16 +212,17 @@ define(function(require){
         }
 
         // 计算中心半径
-        function getRedius() {
+        function getRedius(deno) {
             var t;
             if (canvasObj.width >= canvasObj.height) {
                 var e =  canvasObj.height / 10;
-                t = (canvasObj.height - e) / 3
+                t = (canvasObj.height - e) / deno
             } else {
                 var n =  canvasObj.width / 10 * 2;
                 t = (canvasObj.width - n) / 2;
             }
             return t;
+
         }
 
 
@@ -272,6 +274,28 @@ define(function(require){
                 particleArr.push(polygon)
             }
         }
+
+        // changing the designs on scroll
+        // let startScrollValue=0;
+        // function changeRadius (changeScrollValue) {
+        //   if(changeScrollValue > startScrollValue ) {
+        //     var m=getRedius(changeScrollValue/1000);
+        //     // console.log(m);
+        //     startScrollValue= changeScrollValue;
+        //   }
+        //   if (changeScrollValue < startScrollValue ){
+        //     var m=getRedius(changeScrollValue/1000);
+        //     // console.log(m);
+        //     startScrollValue= changeScrollValue;
+        //   }
+        // }
+
+        $(window).scroll(function (event) {
+            var scroll = $(window).scrollTop();
+
+            // changeRadius(scroll)
+        });
+
 
 
     })()
