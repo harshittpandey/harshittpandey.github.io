@@ -206,6 +206,7 @@ define(function(require){
             var e = getRedius(2.7);
             console.log("real radius: "+e);
             t ? mainParticle.radius = e : mainParticle = new Polygon(e,sideNum);
+
             mainParticle.x = helfWidth;
             mainParticle.y = helfHeight;
             curPath = mainParticle.getPath()
@@ -276,23 +277,25 @@ define(function(require){
         }
 
         // changing the designs on scroll
-        // let startScrollValue=0;
-        // function changeRadius (changeScrollValue) {
-        //   if(changeScrollValue > startScrollValue ) {
-        //     var m=getRedius(changeScrollValue/1000);
-        //     // console.log(m);
-        //     startScrollValue= changeScrollValue;
-        //   }
-        //   if (changeScrollValue < startScrollValue ){
-        //     var m=getRedius(changeScrollValue/1000);
-        //     // console.log(m);
-        //     startScrollValue= changeScrollValue;
-        //   }
-        // }
+        let startScrollValue=0;
+        function changeRadius (changeScrollValue) {
+          if(changeScrollValue > startScrollValue ) {
+            var m=getRedius(changeScrollValue/1000);
+            // helfWidth= helfWidth/m;
+            // console.log(m);
+            startScrollValue= changeScrollValue;
+          }
+          if (changeScrollValue < startScrollValue ){
+            var m=getRedius(changeScrollValue/1000);
+            // helfWidth= helfWidth*m;
+            // console.log(m);
+            startScrollValue= changeScrollValue;
+          }
+        }
 
         $(window).scroll(function (event) {
             var scroll = $(window).scrollTop();
-
+            console.log(Polygon.radius);
             // changeRadius(scroll)
         });
 
