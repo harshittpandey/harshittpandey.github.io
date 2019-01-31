@@ -127,7 +127,6 @@ define(function(require){
         createParticle(666);
         render();
 
-
         function  createColors(){
             for (var i in colors){
                 colorsArray.push(colors[i]);
@@ -203,8 +202,7 @@ define(function(require){
 
         // 创建主多边形框对象
         function createMainParticle(t) {
-            var e = getRedius(2.7);
-            console.log("real radius: "+e);
+            var e = getRedius(3.1);
             t ? mainParticle.radius = e : mainParticle = new Polygon(e,sideNum);
 
             mainParticle.x = helfWidth;
@@ -276,32 +274,59 @@ define(function(require){
             }
         }
 
-        // changing the designs on scroll
-        let startScrollValue=0;
-        function changeRadius (changeScrollValue) {
-          if(changeScrollValue > startScrollValue ) {
-            var m=getRedius(changeScrollValue/1000);
-            // helfWidth= helfWidth/m;
-            // console.log(m);
-            startScrollValue= changeScrollValue;
-          }
-          if (changeScrollValue < startScrollValue ){
-            var m=getRedius(changeScrollValue/1000);
-            // helfWidth= helfWidth*m;
-            // console.log(m);
-            startScrollValue= changeScrollValue;
-          }
-        }
-
-        $(window).scroll(function (event) {
-            var scroll = $(window).scrollTop();
-            console.log(Polygon.radius);
-            // changeRadius(scroll)
-        });
-
 
 
     })()
 
+
+    // changing the design according to the scroll
+    var startScrollValue=0;
+    var width= $(".home canvas").width();
+    var height= $(".home canvas").height();
+    var initialWidth= width;
+    var initialHeight= height;
+    var finalWidth= 0.75*width;
+    var finalHeight= 0.75*height;
+
+    // console.log("width :"+width+ "height :"+ height);
+    // console.log("Initialwidth :"+initialWidth+ " Intitalheight :"+ initialHeight);
+    // console.log("Finalwidth :"+finalWidth+ "Final height :"+ finalHeight);
+
+    function changeDesignOnScroll(changeScrollValue) {
+        if (changeScrollValue > startScrollValue) {
+          if(width>finalWidth) {
+              var temp= 0.01*width;
+              width= width- temp;
+              $(".home canvas").css("width", width);
+          }
+          else {
+            console.log("bottom reached");
+          }
+          if(height>finalHeight) {
+              var temp= 0.01*height;
+              height= height- temp;
+              $(".home canvas").css("height", height);
+          }
+          startScrollValue = changeScrollValue;
+        }
+        if (changeScrollValue < startScrollValue) {
+          if(width<initialWidth) {
+              var temp= 0.015*width;
+              width= width+ temp;
+              $(".home canvas").css("width", width);
+          }
+          if(height<initialHeight) {
+              var temp= 0.015*height;
+              height= height+ temp;
+              $(".home canvas").css("height", height);
+          }
+          startScrollValue = changeScrollValue;
+        }
+      }
+
+    $(window).scroll(function(event) {
+        var scroll = $(window).scrollTop();
+        changeDesignOnScroll(scroll);
+    });
 
 });
