@@ -1,73 +1,463 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <title>Harshit Pandey</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bootstrap 4 Portfolio/Resume Theme for Developers">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+    <link rel="shortcut icon" href="favicon.ico">
 
-<head lang="en">
-  <meta charset="UTF-8">
-  <title>cc</title>
-  <style>
-    html {
-      box-sizing: border-box
-    }
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
-    *,
-    *:before,
-    *:after {
-      box-sizing: inherit
-    }
+    <!-- FontAwesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
 
-    /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
 
-    html {
-      -ms-text-size-adjust: 100%;
-      -webkit-text-size-adjust: 100%
-    }
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">
+    <!-- github acitivity css -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="assets/plugins/github-activity/github-activity-0.1.5.min.css">
 
-    body {
-      margin: 0
-    }
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
 
-    body {
-      font: 100%/1.5 "Microsoft YaHei", Helvetica, Arial, sans-serif
-    }
-
-    #wrapper {
-      width: 100%;
-      height: 100%;
-      position: relative;
-      border: 1px solid #ccc;
-      background: white;
-    }
-
-    .home {
-      display: table;
-      overflow: display;
-    }
-
-    .home canvas {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-  </style>
 </head>
 
-<body style="margin: 0; padding: 0; width: 100%; height: 100%">
+<body>
+    <!-- ******HEADER****** -->
+    <header class="header">
+        <div class="container clearfix">
+            <img class="profile-image img-fluid float-left" src="assets/resume/harshit.JPG" style="width:190px; border-radius:50%" alt="Harshit Pandey" />
+            <div class="profile-content float-left">
+                <h1 class="name">Harshit Pandey</h1>
+                <h2 class="desc">Frontend Developer</h2>
+                <ul class="social list-inline">
+                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/harshit-pandey-84779114a/"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="list-inline-item"><a href="https://github.com/harshittpandey"><i class="fab fa-github-alt"></i></a></li>
+                    <li class="list-inline-item"><a href="https://medium.com/@harshitpandey678"><i class="fab fa-medium"></i></a></li>
+                </ul>
+            </div><!--//profile-->
+            <a class="btn btn-cta-primary float-right" href="./assets/resume/harshitResume.pdf" target="_blank"><i class="fas fa-file"></i> Resume</a>
+        </div><!--//container-->
+    </header><!--//header-->
 
-  <div class="" style="height:2000px; background:transparent">
-    <div id="wrapper" class="home" style="position:fixed">
-    </div>
-  </div>
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-lg-8 col-12">
+                <section class="about section">
+                    <div class="section-inner">
+                        <h2 class="heading">About Me</h2>
+                        <div class="content">
+                            <q>
+                              Front-end Developer leveraging JavaScript to build responsive websites and interactive features that
+                            drive business growth and improve UX
+                            </q>
+                            <hr>
+                            <p>
+                              I currently am working as a Frontend Engineer(Intern) at Stones2Milestones, which is where my passion for designing and developing the User-Interface converge. You can always check some of my projects on <a href="https://github.com/harshittpandey">Github</a>. Outside of work I love to Sketch and Travel. I am also messing with some React.js projects . Currently I am also accepting freelance work, and I'd love to get coffee and get to know you, so don’t hesitate to get in touch.
+                            </p>
 
-  <div class="" style="position:absolute; top: 0px; width:90vw;">
-    <img src="./img/harshit_logo.png" alt="" style="width:275px;margin-top:16%;margin-left:43%">
-  </div>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </section><!--//section-->
 
+               <section class="latest section">
+                    <div class="section-inner">
+                        <h2 class="heading">Recent Projects</h2>
+                        <div class="content">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                            <div class="item featured text-center">
+                                <h3 class="title"><a href="https://github.com/harshittpandey/friendreq-system" target="_blank">Friend Request System using Node.js</a></h3>
+                                <p class="summary">A simple node.js application which let's you search for users and connect with them by sending Friend Request.</p>
+                                <div class="featured-image has-ribbon">
+                                    <a href="https://github.com/harshittpandey/friendreq-system" target="_blank">
+                                    <img class="img-fluid project-image" src="assets/resume/projectFriendRequest.gif" alt="FriendRequest" />
+                                    </a>
+                                    <div class="ribbon">
+                                        <div class="text" style="font-size:10px">Last Project</div>
+                                    </div>
+                                </div>
 
-    <script src="js/require.js" data-main="js/index.js"></script>
+                                <div class="desc text-left">
+                                    <p>
+                                      In this application a User can create a profile ,can Search for other Users and Connect with them by sending and accepting friend Request.
+                                      This was my first Node.js Project.
+                                      I have also written a Blog on this Project.
+                                    </p>
+                                    <p>
+                                      Please Read and give your Feedbacks : <span> <a href="https://medium.com/@harshitpandey678/friend-request-system-using-node-js-c9effadc8beb" style="letter-spacing:2px"> Friend Request System Blog </a> </span>
+                                    </p>
+                                </div><!--//desc-->
+                                <a class="btn btn-cta-secondary" href="https://medium.com/@harshitpandey678/friend-request-system-using-node-js-c9effadc8beb" target="_blank"><i class="fas fa-thumbs-up"></i> Like my project</a>
+                            </div><!--//item-->
+                            <hr class="divider" />
+
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://github.com/harshittpandey/testpackage-app" target="_blank">
+                                <img class="img-fluid project-image" src="assets/resume/projectTest.png" style="height: 150px" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://github.com/harshittpandey/testpackage-app" target="_blank">Quiz Platform</a></h3>
+                                    <p class="mb-2">A Vue.js quiz application which gets questions from a JSON file and reading passages questions and other simple questions are designed in a responsive manner.</p>
+                                    <p><a class="more-link" href="https://github.com/harshittpandey/testpackage-app" target="_blank"><i class="fas fa-external-link-alt"></i>View Code.</a></p>
+                                </div><!--//desc-->
+                            </div><!--//item-->
+
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://github.com/harshittpandey/IplDashboard" target="_blank">
+                                <img class="img-fluid project-image" src="assets/resume/projectIplDashboard.png"  alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://github.com/harshittpandey/IplDashboard" target="_blank">IPL(0-9) Dashboard in VueJS (using Kaggle Dataset)</a></h3>
+                                    <p class="mb-2">A Vue.js application where user can select the IPL Season and the Dashboard will graphically represent the data of 9 seasons of IPL according to the Matches and the Players.</p>
+                                    <p><a class="more-link" href="https://github.com/harshittpandey/IplDashboard" target="_blank"><i class="fas fa-external-link-alt"></i>View Code.</a></p>
+                                </div><!--//desc-->
+                            </div><!--//item-->
+
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://github.com/harshittpandey/Kwench-Assignment" target="_blank">
+                                <img class="img-fluid project-image" src="assets/resume/projectKwench.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://github.com/harshittpandey/Kwench-Assignment" target="_blank">Official site of Kwench</a></h3>
+                                    <p class="mb-2">This is the sample design for the Official page of Kwench. I got this as an assignment and later I enjoyed creating the UI. It was an amazing experience .
+                                      Check <a href="https://harshittpandey.bitbucket.io/">Website</a>
+                                    </p>
+                                    <p><a class="more-link" href="https://github.com/harshittpandey/Kwench-Assignment" target="_blank"><i class="fas fa-external-link-alt"></i>View Code</a></p>
+                                </div><!--//desc-->
+                            </div><!--//item-->
+
+                             <div class="item row">
+                                <a class="col-md-4 col-12" href="https://github.com/harshittpandey/genero17.github.io" target="_blank">
+                                <img class="img-fluid project-image" src="assets/resume/projectGenero.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://github.com/harshittpandey/genero17.github.io" target="_blank">Genero'17</a></h3>
+                                    <p class="mb-2">Genero is the college fest of ABES EC. I have created this website using Vanilla.js and it has some sections like Events, Register, Special attractions(three days:three stars), Sponsors, Core Team Members, About us.
+                                      Check <a href="https://genero17.github.io/">Website</a>.
+                                    </p>
+                                    <p><a class="more-link" href="https://github.com/harshittpandey/genero17.github.io" target="_blank"><i class="fas fa-external-link-alt"></i>View Code</a></p>
+                                </div><!--//desc-->
+                            </div><!--//item-->
+
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://github.com/harshittpandey/hacktrec-2k17" target="_blank">
+                                <img class="img-fluid project-image" src="assets/resume/projectHackTREC.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://github.com/harshittpandey/hacktrec-2k17" target="_blank">HackTREC'17</a></h3>
+                                    <p class="mb-2">HackTREC'17 is a 24hrs Hackathon held in ABES EC. I have designed and developed the website for HackTREC'17. I have intergrated some of the designs from Codrops and I have also converted the nav-bar to nav-ball.
+                                      Check <a href="https://hacktrec.github.io/">Website</a> :
+                                    </p>
+                                    <p><a class="more-link" href="https://github.com/harshittpandey/hacktrec-2k17" target="_blank"><i class="fas fa-external-link-alt"></i>View Code</a></p>
+                                </div><!--//desc-->
+                            </div><!--//item-->
+
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </section><!--//section-->
+
+                <section class="projects section">
+                    <div class="section-inner">
+                        <h2 class="heading">Other Projects</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title"><a href="https://github.com/harshittpandey/quillJS-texteditor">Quill.JS TextEditor</a> <span class="badge badge-theme">Open Source</span></h3>
+                                <p class="summary">Initially I tried to create textEditor by wiriting seperate codes for every functions, and it was taking so much time. But then, I got to know about Quill.js and it was so easy to integrate Quill.js .and in this TextEditor, I have also integrated some javascript code to change the imageSize.
+                                  I have also written a Blog on this Project.</p>
+                                <p>  Please read and give your feedbacks here: <a href="https://medium.com/front-end-weekly/an-api-driven-rich-text-editor-in-5-steps-8cb00ff3a47e">RICH TEXT-EDITOR IN 5 SIMPLE STEPS</a> .
+                                </p>
+                                <p><a class="more-link" href="https://github.com/harshittpandey/quillJS-texteditor" target="_blank"><i class="fas fa-external-link-alt"></i>View Code</a></p>
+                            </div><!--//item-->
+                            <hr>
+                            <div class="item">
+                                <h3 class="title"><a href="https://github.com/harshittpandey/Vistara">Vistara Magzine</a> <span class="badge badge-theme">Open Source</span></h3>
+                                <p class="summary">Vistara is a digital magazine which will incorporate the latest trending technical ideologies around us, the information of the upcoming events , the reports of the conducted events.
+                                </p>
+                                <p><a class="more-link" href="https://github.com/harshittpandey/Vistara" target="_blank"><i class="fas fa-external-link-alt"></i>View Code</a></p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><a href="https://github.com/harshittpandey/zonals">Aktu Zonals'17</a> <span class="badge badge-theme">Open Source</span></h3>
+                                <p class="summary">
+                                  Official Website of Aktu Zonals 2k17. created with Vanilla js. It was my first website.</p>
+                                  <p>Check <a href="http://aktusportsfest.abes.ac.in/">Website</a>.
+                                </p>
+                                <p><a class="more-link" href="https://github.com/harshittpandey/zonals" target="_blank"><i class="fas fa-external-link-alt"></i>View Code</a></p>
+                            </div><!--//item-->
+
+                            <a class="btn btn-cta-secondary" href="https://github.com/harshittpandey?tab=repositories">More on Github <i class="fas fa-chevron-right"></i></a>
+
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </section><!--//section-->
+
+                <section class="experience section">
+                    <div class="section-inner">
+                        <h2 class="heading">Work Experience</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title">Frontend Engineer (Intern) - <span class="place"><a href="https://www.linkedin.com/company/stones2milestones/">Stones2Milestones</a></span> <span class="year">(Jan-2019 - Present)</span></h3>
+                                <p>
+                                  In Stones2Milestones, My work is to create a responsive and UserInterface using Vue.js.
+                                </p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">UI/UX Developer (Remote) - <span class="place"><a href="https://www.linkedin.com/company/amtech-solutions-pvt-ltd/">AmTech Software Solutions Pvt Ltd</a></span> <span class="year">(Nov-2017 - Feb-2018)</span></h3>
+                                <p>
+                                  It was a 4 months project of designing and developing Javascript based text-editor.
+                                  I was a UI/UX designer along with coding text-editor.
+                                  we have worked with functions provided by DOM for text-editing, QuillJS, and CKE-editor.
+                                </p>
+                                <p style="line-height:0">
+                                  <a href="https://github.com/harshittpandey/text-editor">View on Github</a>
+                                </p>
+                            </div><!--//item-->
+
+                            <div class="item">
+                                <h3 class="title">UI/UX Designer- Developer (Remote) - <span class="place"><a href="https://www.linkedin.com/company/total-management-outturn-tmo/about/">Total Management Outturn</a></span> <span class="year">(March-2018 - May-2018)</span></h3>
+                                <p>
+                                  I have worked with a dynamic online rental website with php based back-end.
+                                  and as a designer ,I have designed the logo for TMO Systems, splash screens for android applications, and some characters desgin .
+                                </p>
+                            </div><!--//item-->
+
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </section><!--//section-->
+                <section class="github section">
+                    <div class="section-inner">
+                        <h2 class="heading">My GitHub</h2>
+
+                        <div id="github-graph" class="github-graph" style="border:1px solid lightgray; border-radius: 2px">
+                          <img src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" style="width:100px;margin-left:40%; margin-top:8%; margin-bottom: 5%" class="spinner"/>
+                          <p class="spinner-text monospace">Crunching <a href="https://github.com/harshittpandey">@harshittpandey</a>'s contributions just for you.</p>
+                        </div><!--//github-graph-->
+
+                        <!--//Usage: https://caseyscarborough.com/projects/github-activity/ -->
+                        <div id="ghfeed" class="ghfeed">
+                          <img src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" style="width:100px;margin-left:40%; margin-top:8%; margin-bottom: 5%" class="spinner"/>
+                          <p class="spinner-text monospace">Crunching <a href="https://github.com/harshittpandey">@harshittpandey</a>'s activities just for you.</p>
+                        </div><!--//ghfeed-->
+
+                    </div><!--//secton-inner-->
+                </section><!--//section-->
+            </div><!--//primary-->
+            <div class="secondary col-lg-4 col-12">
+                 <aside class="info aside section">
+                    <div class="section-inner">
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Gurgaon, India</li>
+                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="mailto:harshitpandey678@gmail.com?Subject=Hello%20Harshit">harshitpandey678@gmail.com</a></li>
+                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="#">https://harshittpandey.github.io/</a></li>
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//aside-->
+
+                <aside class="skills aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Skills</h2>
+                        <div class="content">
+                            <p class="intro">
+                                Check My Skills on <a href="https://www.linkedin.com/in/harshit-pandey-84779114a/">Linkedin</a> .
+                            </p>
+
+                            <div class="row skillset">
+
+                                <div class="col-sm-4 item">
+                                    <img src="./assets/resume/skills/html.png" alt="HTMLlogo" style="width:100px">
+                                    <h3 class="level-title" style="margin-left:1.5em;">HTML</h3>
+                                </div><!--//item-->
+
+                                <div class="col-sm-4 item">
+                                    <img src="./assets/resume/skills/css.png" alt="CSSlogo" style="width:100px">
+                                    <h3 class="level-title" style="margin-left:1.5em">CSS</h3>
+                                </div><!--//item-->
+
+                                <div class="col-sm-4 item">
+                                    <img src="./assets/resume/skills/js.png" alt="JSlogo" style="width:100px">
+                                    <h3 class="level-title" style="margin-left:1em">Javascript</h3>
+                                </div><!--//item-->
+
+                                <div class="col-sm-4 item">
+                                    <img src="./assets/resume/skills/jQuery.png" alt="jQuerylogo" style="width:100px">
+                                    <h3 class="level-title" style="margin-left:1.5em">jQuery</h3>
+                                </div><!--//item-->
+
+                                <div class="col-sm-4 item">
+                                    <img src="./assets/resume/skills/vue.png" alt="VUElogo" style="width:100px">
+                                    <h3 class="level-title" style="margin-left:1.5em">Vue</h3>
+                                </div><!--//item-->
+
+                                <div class="col-sm-4 item">
+                                    <img src="./assets/resume/skills/node.png" alt="Nodelogo" style="width:100px;padding-bottom:40px">
+                                    <h3 class="level-title" style="margin-left:1.5em">Node</h3>
+                                </div><!--//item-->
+
+                                <div class="col-sm-4 item">
+                                    <img src="./assets/resume/skills/boostrap.svg" alt="Bootstraplogo" style="width:80px">
+                                    <h3 class="level-title" style="margin-left:1em">Bootstrap</h3>
+                                </div><!--//item-->
+
+                                <div class="col-sm-4 item">
+                                    <img src="./assets/resume/skills/ai.png" alt="AIlogo" style="width:80px">
+                                    <h3 class="level-title" style="">Adobe Illustrator</h3>
+                                </div><!--//item-->
+
+                            </div>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+
+                <!-- <aside class="testimonials aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Testimonials</h2> -->
+                        <!-- <div class="content">
+                            <div class="item">
+                                <blockquote class="quote">
+                                    <p><i class="fas fa-quote-left"></i>James is an excellent software engineer and he is passionate about what he does. You can totally count on him to deliver your projects!</p>
+                                </blockquote>
+                                <p class="source"><span class="name">Tim Adams</span><br /><span class="title">Curabitur commodo</span></p>
+                            </div>
+
+                            <p><a class="more-link" href="#"><i class="fas fa-external-link-alt"></i>More on Linkedin</a></p>
+
+                        </div> -->
+                        <!--
+                    </div>
+                </aside> -->
+
+                <aside class="education aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Education</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> B.Tech Computer Science</h3>
+                                <h4 class="university">ABES Engineering College, Ghaziabad <span class="year">(2015-2019)</span></h4>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+
+                <!-- <aside class="languages aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Languages</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li class="item">
+                                    <span class="title"><strong>English:</strong></span>
+                                    <span class="level">Native Speaker <br class="visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
+                                </li>
+                                <li class="item">
+                                    <span class="title"><strong>Spanish:</strong></span>
+                                    <span class="level">Professional Proficiency <br class="visible-sm visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half"></i></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>-->
+
+                <aside class="blog aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Latest Blog Posts</h2>
+                        <div class="content">
+                          <div class="items">
+                            <div class="item" style="border:1px solid lightgray; padding:10px; border-radius: 8px">
+                              <h3 class="title">
+                                <a href="https://medium.com/@harshitpandey678/friend-request-system-using-node-js-c9effadc8beb" target="blank">Friend Request System using node js .</a>
+                              </h3>
+                              <div class="">
+                                <p>
+                                  This node.js application allows you to search for other registered users, send and accept friend request.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="item" style="border:1px solid lightgray; padding:10px; border-radius: 8px">
+                              <h3 class="title">
+                                <a href="https://medium.com/front-end-weekly/an-api-driven-rich-text-editor-in-5-steps-8cb00ff3a47e" target="blank">An API Driven Rich Text Editor in 5 Steps.</a>
+                              </h3>
+                              <div class="">
+                                <p>
+                                  This blog will help you to create a Rich-Text Editor in just 5 simple steps.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+
+                <aside class="list music aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Favourite coding music</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-headphones"></i> <a href="https://www.jiosaavn.com/song/7-years/RF48UEJ6WVg">7 Years</a></li>
+                                <li><i class="fas fa-headphones"></i> <a href="https://www.jiosaavn.com/song/psycho/IVE6R0RxRQE">Psycho</a></li>
+                                <li><i class="fas fa-headphones"></i> <a href="https://www.jiosaavn.com/song/the-nights/BysDe0J0Z30">The Nights</a></li>
+                                <li><i class="fas fa-headphones"></i> <a href="https://www.jiosaavn.com/song/wait/AixSWQVSUFw">Wait</a></li>
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+
+                <aside class="list conferences aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Hackathon</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="far fa-calendar-alt"></i>HackTREC'16 (ABESEC)</li>
+                                <li><i class="far fa-calendar-alt"></i>GDC'17 JIIT (NOIDA)</li>
+                                <li><i class="far fa-calendar-alt"></i>GDC'18 JIIT (NOIDA)</li>
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+
+                <aside class="credits aside section">
+                    <div class="section-inner">
+                        <h2 class="heading" style="">Start a project</h2>
+                        <div class="content">
+                             <p>Interested in working together? We should queue up a chat. I’ll buy the coffee.</p>
+                             <img src="./assets/resume/harshit_logo.png" alt="" style="width:200px; height:150px;margin-left: 20%">
+                             <a class="btn btn-cta-secondary btn-follow" href="" target="_blank" style="margin-left:25%"><i class="fas fa-coffee"></i>Let's do this</a>
+
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+
+            </div><!--//secondary-->
+        </div><!--//row-->
+    </div><!--//masonry-->
+
+    <!-- ******FOOTER****** -->
+    <footer class="footer">
+        <div class="container text-center">
+                <small class="copyright">Designed with <i class="fas fa-heart"></i> by Harshit Pandey</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
+    <!-- github calendar plugin -->
+    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+
+    <script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
-
 </html>
